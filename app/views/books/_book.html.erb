@@ -1,0 +1,13 @@
+
+  <div class="col-sm-4">
+    <div class="thumbnail books-boxes">
+      <%= link_to book_path(book) do %>
+	  <%= image_tag 'rails4.jpg', width: 225, height: 300, alt: 'books'%>
+      
+      <% end %>
+      <div class="caption">
+        <h5><strong><%= link_to book.name, book_path(book) %></strong></h5>
+        <p>$<%= book.price.to_f / 100 %></p>
+      </div>
+    </div>
+  </div>

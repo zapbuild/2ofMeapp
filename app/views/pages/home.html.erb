@@ -1,0 +1,25 @@
+<section id="intro" data-speed="6" data-type="background">
+<div class="container">
+<div class="jumbotron transparent-bg">
+  <h1>Welcome to 2ofMe</h1>
+  <p>The Premiere Online Marketplace for In-Home Services</p>
+  <%= link_to "Services", books_path, class: "btn btn-primary btn-lg service-btn" %>
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg signup-btn" %>
+</div>
+</div>
+</section>
+<section id="about" class="about-pg" data-speed="4" data-type="background">
+<div class="container">
+<div class ="jumbotron">
+	<h2>What is 2ofMe?</h2>
+	<p>2ofMe is a service to connect busy people with services that can be deliverd to your home. Our service providers run the gamut from Beauty services to Educational. Designed to help you be more productive, it will feel like there are TWO OF YOU</p>
+</div>
+</div>
+</section>
+<section id="books" data-speed="2" data-type="background">
+<div class="container">
+<div class="row">
+<%= render @books %>
+</div>
+</div>
+</section>

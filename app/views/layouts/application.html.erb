@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>2ofMe</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<%= render "layouts/header" %>
+
+	<% flash.each do |type, message| %>
+	<div class="alert alert-info fade-in">
+<button class="close" data-dismiss="alert">x</button>
+<%= message %>
+	</div>
+	<% end %>
+<%= yield %>
+
+</body>
+</html>

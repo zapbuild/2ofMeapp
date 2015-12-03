@@ -1,0 +1,102 @@
+.form-signin {
+ max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input {
+  margin-bottom: 10px;
+}
+
+/* Styled By Zapbuild*/
+body{font-family: 'Raleway', sans-serif !important;}
+$color_green: #5bbc2e;
+$color_dark-green:#37a000;
+$color_black: #494949;
+$white: #fff;
+.form-signin {
+	
+  max-width: 400px;
+  padding: 15px;
+  margin: 0 auto;
+  background:rgba(255,255,255,0.8);
+  	h1 {
+		color: $color_green;
+	}
+	h2 {
+		color: $color_green;
+	}
+	p {
+		color: $color_black;
+	}
+	a{color: $color_dark-green; font-weight:500;}
+	.btn {
+	background: $color_green none repeat scroll 0 0;
+	border: 1px solid $color_green;
+	color: $white;
+	&:hover {
+		background: $white none repeat scroll 0 0;
+		border: 1px solid $color_green;
+		color: $color_green;
+	}
+}
+  @media screen and (max-width: 360px) {
+	h2, .h2 {
+		font-size: 24px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.navbar-collapse { 
+	position: absolute;  
+	width: 100%; 
+	margin:0% !important;  
+	z-index: 9; 
+	background:#f8f8f8; 
+	border:1px solid #ccc; 
+	left:0px;
+	}
+	.navbar-nav {
+	margin: 0 -15px;}
+	.nav > li {
+			border-bottom:1px solid #c5c5c5;
+		}
+	.nav > li:hover {
+			background:#fff; 
+		}
+	
+}
+.sign-bg{
+	width:100%; 
+	min-height:92%; 
+	background: url(bg3-img.jpg) 50% 0 fixed; 
+	background-size:cover; 
+	margin:-18px 0 0; 
+	padding:100px 0;
+	}
+.new-services{
+	width:100%; 
+	min-height:92%; 
+	background: url(about_bg.jpg) 50% 0 fixed; 
+	background-size:cover;
+	margin:-18px 0 0; 
+	padding:100px 0;
+	}
